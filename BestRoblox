@@ -1,0 +1,15 @@
+-- [[ IrishHub - New Version Executor ]] --
+
+if game.PlaceId == 142823291 then
+    task.spawn(function()
+        local success, err = pcall(function()
+            loadstring(game:HttpGet(
+                "https://raw.githubusercontent.com/MachoHUB/MMV/refs/heads/main/ScriptDev"
+            ))()
+        end)
+
+        if not success then
+            warn("[Macho HUB] Script Error:", err)
+        end
+    end)
+end
